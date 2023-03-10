@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Utility-2023</title>
+
+    <!-- FAVICON HERE -->
+    <link rel="icon" type="image/x-icon" href="img/tejas.png">
+
+    <!-- EXTERNAL CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- TAILWIND CSS CDN LINK -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- EXTERNAL BOOTSTRAP CDN LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+  </head>
+<body>
+
+
+    <!-- NAVBAR START HERE -->
+
+    <nav class="navbar navbar-expand-lg  bg-body-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">TEXT UTILITY</a>
+          <button class="navbar-toggler border border-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse btn " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-light">Uses</a>
+              </li>
+            </ul>
+
+
+            <div class="form-check mx-2">
+              <input class="form-check-input" type="checkbox" value="hello" id="themeSwitch">
+              <label class="form-check-label text-light" for="flexCheckDisabled">Dark Mode</label>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success " type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- NAVBAR END HERE -->
+
+
+
+    <!-- MAIN TEXT AREA START HERE -->
+    <div class="container my-3">
+      <div class="mb-3 ">
+        <!-- <label for="exampleFormControlTextarea1" class="form-label">Enter Your Text Here</label> -->
+        <textarea class="form-control border border-info rounded my-3"  value="hey" id="txtarea1" rows="6"  placeholder="Enter Your Text Here"></textarea>
+      </div>
+    </div>
+
+    <!-- MAIN TEXT AREA END HERE -->
+
+    <!-- BUTTON START HERE -->
+
+  <div class="container">
+
+    <button type="button"  id="btn1" class="btn btn-outline-success my-2 mx-2" onclick="uppercaseFunction()">Convert To Uppercase</button>
+    <button type="button"  id="btn2"  class="btn btn-outline-success my-3 mx-2" onclick="LowerFunction()">Convert To Lowercase</button>
+    <button type="button"  id="btn3"   class="btn btn-outline-success my-3 mx-2" onclick="CapitalizeFunction()">Convert To Capitalize</button>
+    <button type="button"  id="btn4"  class="btn btn-outline-success my-3 mx-2" onclick="ExtraSpaceFunction()">Remove Extra Spaces</button>
+    <button type="button"  id="btn7"  class="btn btn-outline-success my-3 mx-2" onclick="CountCharFunction()">Count  Characters</button>
+    <button type="button"  id="btn5" value="Hello World" class="btn btn-outline-success my-3 mx-2" onclick="CopyFunction()">Copy Text</button>
+    <button type="button"  id="btn6"  class="btn btn-outline-success my-3 mx-2" onclick="ClearTextFunction()">Clear Text</button>
+    <button type="button"  id="btn8"  class="btn btn-outline-success my-3 mx-2" onclick="UnderLineTextFunction()">Underline Text</button>
+    <button type="button"  id="btn9"  class="btn btn-outline-success my-3 mx-2" onclick="ReverseTextFunction()">Reverse Text</button>
+    <button type="button"  id="btn10"  class="btn btn-outline-success my-3 mx-2" onclick="BinaryTextFunction()">Convert To Binary</button>
+
+  </div>
+
+
+    <!-- BUTTON END HERE -->
+
+  
+ 
+
+      <!-- TEXT SUMMERY START HERE -->
+      <div class="container my-3" id="mytext">
+        <h4>Your Text Summery Is Here : </h4>
+        <p class="p1">
+          <h6 class="head1">The Words in Your Text Is :</h6> 
+          <h6 class="head2">The Total Character In Your Text Is :</h6>
+          <h6 class="head3">Time Required For Read This Text Is :</h6> 
+          <!-- {text.length * 0.008}  -->
+        </p>
+    </div>
+      
+      <!-- TEXT SUMMERY END HERE -->
+
+
+      <!-- FOOTER START HERE -->
+      <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl" id="Designer">Tejas Phatangare</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 -Tejas Phatangare
+            <a href="https://www.linkedin.com/in/tejas-phatangare-339897235/" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank"></a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+      <!-- FOOTER END HERE -->
+    
+</body>
+<!-- EXTERNAL JS FILE -->
+<script src="js/script.js"></script>
+
+<!-- EXTERNAL BOOTSTRAP CDN LINK -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
